@@ -1,0 +1,32 @@
+PODS:
+  - Anchorage (4.3)
+  - PromiseKit (6.10.0):
+    - PromiseKit/CorePromise (= 6.10.0)
+    - PromiseKit/Foundation (= 6.10.0)
+    - PromiseKit/UIKit (= 6.10.0)
+  - PromiseKit/CorePromise (6.10.0)
+  - PromiseKit/Foundation (6.10.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.10.0):
+    - PromiseKit/CorePromise
+  - SwiftChart (1.0.1)
+
+DEPENDENCIES:
+  - Anchorage (~> 4.3)
+  - PromiseKit (~> 6.10.0)
+  - SwiftChart (~> 1.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Anchorage
+    - PromiseKit
+    - SwiftChart
+
+SPEC CHECKSUMS:
+  Anchorage: 21a98675245188427f0bcea21404d42a824a766f
+  PromiseKit: 1fdaeb6c0a94a5114fcb814ff3d772b86886ad4e
+  SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
+
+PODFILE CHECKSUM: 345b468e51d806b06d8e7153985ede87dad51a59
+
+COCOAPODS: 1.7.5
