@@ -1,0 +1,29 @@
+definitions:
+  env_versions: &env_versions
+    xcode: 13.0
+  instance_mac_mini: &instance_mac_mini
+    instance_type: mac_mini
+  scripts:
+    - &run_ios_tests
+      name: Run ios tests
+      script: |
+        xcode-project run-tests \
+          --workspace github-repos.xcworkspace \
+          --scheme "github-repos" \
+          --device "iPhone 12"
+      test_report: build/ios/test/*.xml
+    
+workflows:
+  run_tests:
+    name: run iOS tests
+    <<: *instance_mac_mini
+    environment:
+      <<: *env_versions
+    triggering:
+      events:
+        - push
+    scripts:
+      - *run_ios_tests
+    artifacts:
+      - build/ios/test/*.xml
+  
