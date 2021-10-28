@@ -17,7 +17,7 @@ DEPENDENCIES:
   - SwiftChart (~> 1.0.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Anchorage
     - PromiseKit
     - SwiftChart
@@ -29,4 +29,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 345b468e51d806b06d8e7153985ede87dad51a59
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.10.0
